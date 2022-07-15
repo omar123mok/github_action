@@ -1,0 +1,15 @@
+name: Devops Github CI/CD Pipeline Demo
+on: push
+
+jobs:
+   demo:
+     name: Github actions demo
+     runs-on: ubuntu-latest
+
+     steps:
+	- uses: actions/checkout@v2
+	
+	- name: check the file
+	  run: ls -lrt
+
+
